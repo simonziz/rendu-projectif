@@ -1,0 +1,11 @@
+ASSERT FAILED: [x>=0 && x<Nx() && y>=0 && y<Ny()] with message: (x,y)=(-1,6) out of limit [Nx=40 , Ny=25]
+In file [/fs03/share/users/simon.ziza/home/Documents/5A/Rendu_projectif/tp_projectif/projet/src/image/template/image_basic.tpp] 
+In function [operator()]
+At line 95 
+
+0             0x41172d cpe::get_backtrace(int) + 61
+1             0x439e80 cpe::image_basic<cpe::color>::operator()(int, int) + 64
+2             0x4389c0 cpe::draw_line(cpe::image&, cpe::ivec2 const&, cpe::ivec2 const&, cpe::color const&) + 112
+3             0x40d05c main + 748
+4       0x7fd69e89aec5 __libc_start_main + 245
+5             0x40db7f ./pgm() [0x40db7f]
